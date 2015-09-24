@@ -61,8 +61,8 @@
 
     // good
     <Foo
-      superLongParam="bar"
-      anotherSuperLongParam="baz"
+        superLongParam="bar"
+        anotherSuperLongParam="baz"
     />
 
     // if props fit in one line then keep it on the same line
@@ -70,8 +70,8 @@
 
     // children get indented normally
     <Foo
-      superLongParam="bar"
-      anotherSuperLongParam="baz"
+        superLongParam="bar"
+        anotherSuperLongParam="baz"
     >
       <Spazz />
     </Foo>
@@ -115,14 +115,14 @@
     ```javascript
     // bad
     <Foo
-      UserName="hello"
-      phone_number={12345678}
+        UserName="hello"
+        phone_number={12345678}
     />
 
     // good
     <Foo
-      userName="hello"
-      phoneNumber={12345678}
+        userName="hello"
+        phoneNumber={12345678}
     />
     ```
 
@@ -132,23 +132,23 @@
     /// bad
     render() {
       return <MyComponent className="long body" foo="bar">
-               <MyChild />
+                 <MyChild />
              </MyComponent>;
     }
 
     // good
     render() {
-      return (
-        <MyComponent className="long body" foo="bar">
-          <MyChild />
-        </MyComponent>
-      );
+        return (
+            <MyComponent className="long body" foo="bar">
+                <MyChild />
+            </MyComponent>
+        );
     }
 
     // good, when single line
     render() {
-      const body = <div>hello</div>;
-      return <MyComponent>{body}</MyComponent>;
+        const body = <div>hello</div>;
+        return <MyComponent>{body}</MyComponent>;
     }
     ```
 
@@ -166,13 +166,13 @@
     ```javascript
     // bad
     <Foo
-      bar="bar"
-      baz="baz" />
+        bar="bar"
+        baz="baz" />
 
     // good
     <Foo
-      bar="bar"
-      baz="baz"
+        bar="bar"
+        baz="baz"
     />
     ```
 
@@ -181,20 +181,20 @@
     ```javascript
     // bad
     React.createClass({
-      onClickSubmit() {
-        // do stuff
-      }
+        onClickSubmit() {
+            // do stuff
+        }
 
-      // other stuff
+        // other stuff
     });
 
     // good
     React.createClass({
-      _onClickSubmit() {
-        // do stuff
-      }
+        _onClickSubmit() {
+            // do stuff
+        }
 
-      // other stuff
+        // other stuff
     });
     ```
 
