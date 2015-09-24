@@ -19,7 +19,6 @@
 ## Basic Rules
 
   - Only include one React component per file.
-  - Always use JSX syntax.
 
 ## Naming
 
@@ -73,7 +72,7 @@
         superLongParam="bar"
         anotherSuperLongParam="baz"
     >
-      <Spazz />
+        <Spazz />
     </Foo>
     ```
 
